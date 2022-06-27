@@ -1,0 +1,38 @@
+.bg {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .wrapper {
+        width: 800px;
+        height: 100%;
+        padding: 20px;
+        background-color: rgba(145, 145, 145, 0.336);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form {
+        width: 600px;
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .bg {
+        .wrapper {
+            width: 100%;
+            background-color: rgba(79, 79, 79, 0.1);
+        }
+        .form {
+            width: 100%;
+            padding-top: 50px;
+        }
+    }
+}
